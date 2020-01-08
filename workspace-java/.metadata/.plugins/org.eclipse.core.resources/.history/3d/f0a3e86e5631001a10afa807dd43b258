@@ -1,0 +1,24 @@
+package uri1060;
+import java.util.Scanner;
+
+public class uri1060 {
+	public static void main(String agrs[]) {
+		
+		Scanner teclado;
+		teclado = new Scanner(System.in);
+		
+		double n1, n2, n3, n4, n5, n6;
+		
+		n1 = teclado.nextInt();
+		n2 = teclado.nextInt();
+		n3 = teclado.nextInt();
+		n4 = teclado.nextInt();
+		n5 = teclado.nextInt();
+		n6 = teclado.nextInt();
+		
+		if(n1 >= 0){
+			System.out.println("valores positivos");
+		}
+		
+	}	
+}

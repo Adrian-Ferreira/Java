@@ -1,0 +1,35 @@
+package uri1101;
+
+import java.util.Scanner;
+
+public class uri1101 {
+	public static void main(String agrs[]) {
+
+		Scanner teclado;
+		teclado = new Scanner(System.in);
+
+		int X, Y;
+
+		X = teclado.nextInt();
+		Y = teclado.nextInt();
+
+		while (((X = teclado.nextInt()) > 0) && ((Y = teclado.nextInt()) > 0)) {
+			int sum = 0;
+			if (X > Y) {
+				for (Y = 1; Y <= X; Y++) {
+					sum += Y;
+					System.out.print(Y + " ");
+				}
+				System.out.printf("Sum = %d" + sum + "\n");
+			} else {
+				for (X = 1; X <= Y; X++) {
+					sum += X;
+					System.out.print(X + " ");
+				}
+				System.out.printf("Sum = %d \n",sum);
+			}
+
+			teclado.close();
+		}
+	}
+}

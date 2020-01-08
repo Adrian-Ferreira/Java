@@ -1,0 +1,27 @@
+package uri1047;
+import java.util.Scanner;
+
+public class uri1047 {
+	public static void main(String agrs[]) {
+		
+		Scanner teclado;
+		teclado = new Scanner(System.in);
+		
+		int hi, mi, hf, mf, dh, dm;
+		
+		hi = teclado.nextInt();
+		mi = teclado.nextInt();
+		hf = teclado.nextInt();
+		mf = teclado.nextInt();
+		
+		if(hf > hi && mf < mi) {
+			dh = 0;
+		}
+		else {
+			if(mf > hi){
+				dh = 23;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,68 @@
+package uri1045;
+
+import java.util.Scanner;
+
+public class uri1045 {
+	public static void main(String agrs[]) {
+
+		Scanner teclado;
+		teclado = new Scanner(System.in);
+
+		double a, b, c, aux;
+
+		int i;
+
+		a = teclado.nextDouble();
+		b = teclado.nextDouble();
+		c = teclado.nextDouble();
+
+		double vet[] = { a, b, c };
+
+		for (i = 0; i < 3; i++) {
+			for (int j = 1; j < (3 - i); j++) {
+
+				if (vet[j - 1] < vet[j]) {
+					aux = vet[j - 1];
+					vet[j - 1] = vet[j];
+					vet[j] = aux;
+				}
+			}
+		}
+		
+		double A = vet[0];
+		double B = vet[1];
+		double C = vet[2];
+		
+		
+		
+		if (A >= B + C) {
+			System.out.print("NAO FORMA TRIANGULO");
+		} 
+			if ((A * A) == (B * B) + (C * C)) {
+				System.out.print("TRIANGULO RETANGULO");
+			} 
+			
+				if((A*A) > (B*B) + (C*C)){
+					System.out.print("TRIANGULO OBTUSANGULO");
+				}
+				
+					if((A*A) < (B*B) + (C*C)){
+						System.out.print("TRIANGULO ACUTANGULO");
+					}
+					
+						if(A == B && A == C){
+							System.out.print("TRIANGULO EQUILATERO");
+						}
+						
+							if(A == B || B != C){
+								System.out.print("TRIANGULO ISOSCELES");
+								
+								teclado.close();
+							}
+						}
+					
+				
+			
+		}
+	
+
